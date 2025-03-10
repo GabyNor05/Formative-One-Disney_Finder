@@ -7,7 +7,7 @@ import Timeline from './components/Timeline';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" >
       <Router>
       <Navbar /> 
       <Routes>
