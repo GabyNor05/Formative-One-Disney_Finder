@@ -168,8 +168,8 @@
   This is used to style the primary buttons on the home page.
 */
 .custom-button {
-  width: 425px;
-  height: 130px;
+  width: 280px;
+  height: 80px;
   border-radius: 10px;
   background-color: #19BACC;
   color: #FFFFFF;
