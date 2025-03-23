@@ -1,0 +1,12 @@
+/* Style for the small columns */
+.column.small {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: flex-start; /* Align items at the top initially */
+    padding-top: 60px; /* Add padding to move the image down */
+}
+
+/* Optional: Style for the images */
+.column.small img {
+    margin-top: 60px; /* Add margin to move the image further down */
+}

@@ -1,0 +1,24 @@
+#titles-dropdown {
+    width: 280px;
+    border-radius: 10px;
+    background-color: rgba(115, 115, 115, 0.10);
+    color: gray;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  /* Style only the default option */
+  #titles-dropdown option:disabled {
+    color: gray; /* Make the default option gray */
+    font-style: italic; /* Optional: Make it italic */
+  }
+  
+  /* Ensure other options retain their original color */
+  #titles-dropdown option:not(:disabled) {
+    color: gray; /* Keep other options black */
+  }

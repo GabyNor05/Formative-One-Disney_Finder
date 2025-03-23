@@ -3,27 +3,31 @@ import { Chart as ChartJS, ArcElement, Tooltip } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
 
 ChartJS.register(ArcElement, Tooltip);
-const DoughnutChart = () => {
+
+const DoughnutChart = ({ selectedTitle }) => {
+    if (!selectedTitle) {
+        // Render a placeholder if no title is selected
+        return <p>Please select a title to view the chart.</p>;
+    }
+
     const data = {
-        labels: ['Red', 'Blue', 'Yellow'],
+        labels: ["Release Year", "IMDB Score", "TMDB Score"],
         datasets: [
             {
-                label: '# of Votes',
-                data: [12, 19, 3],
-                backgroundColor: [
-                    '#19BACC',
-                    '#D9D9D9',
-                    '#012E57',
+                label: "Title Data",
+                data: [
+                    selectedTitle.tmdb_popularity ? selectedTitle.tmdb_popularity : 0,
+                    selectedTitle.imdb_score ? selectedTitle.imdb_score * 3 : 0,
+                    selectedTitle.tmdb_score ? selectedTitle.tmdb_score * 3: 0,
                 ],
-                borderColor: [
-                    '#19BACC',
-                    '#D9D9D9',
-                    '#012E57',  
-                ],
+                backgroundColor: ["#19BACC", "#D9D9D9", "#012E57"],
+                borderColor: ["#19BACC", "#D9D9D9", "#012E57"],
                 borderWidth: 1,
             },
         ],
     };
+
+    console.log("Chart Data:", data.datasets[0].data);
 
     const options = {
         plugins: {
@@ -31,14 +35,16 @@ const DoughnutChart = () => {
                 display: false, // Disable the legend
             },
             tooltip: {
-                enabled: false, // Disable the tooltips
+                enabled: true, // Disable the tooltips
             },
         },
     };
+
     return (
         <div>
             <Doughnut data={data} options={options} />
         </div>
     );
-}
+};
+
 export default DoughnutChart;
