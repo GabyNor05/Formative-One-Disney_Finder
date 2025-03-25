@@ -4,6 +4,7 @@ import Characters from "./Characters";
 import stitch from "../assests/Stitch.png";
 import lilo from "../assests/Lilo.png";
 import Button from "./Button";
+import "../css/home.css";
 
 function Home() {
     return (

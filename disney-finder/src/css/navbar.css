@@ -1,0 +1,32 @@
+/* Navigation Bar ./Navbar
+  --------------------------------------------- 
+  This is used to style the Navigation bar on the home page.
+*/
+.navbar{
+    padding: 10px;
+    background-color: #012E57;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    opacity: 100%;
+}
+.nav-link {
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+    display: flex;
+    direction: row;
+  }
+  
+  .nav-link:hover {
+    color: #19BACC; /* Change to your desired hover color */
+  }
+
+  .logo{
+    width: 100px;
+    height: 25px;
+    padding: 20px; 
+  }

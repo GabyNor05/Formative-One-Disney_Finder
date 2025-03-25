@@ -1,0 +1,40 @@
+.add-button-image{
+    height: 140px;
+    width: 140px;
+    cursor: pointer;
+}
+
+.custom-alert {
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    width: 300px;
+    transform: translate(-50%, -50%);
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 20px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 10px; /* Slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    z-index: 1000;
+    text-align: center;
+    font-size: 16px;
+    font-family: Arial, sans-serif; /* Default font family */
+}
+
+.alert-button {
+    margin-top: 15px;
+    width: 100px;
+    padding: 8px 16px;
+    background-color: #19bacc; /* Default blue button color */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.alert-button:hover {
+    background-color: #17a2b8; /* Slightly darker blue on hover */
+}
+

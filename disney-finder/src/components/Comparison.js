@@ -11,14 +11,14 @@ function Comparison() {
     return (
         <div className="Comparison-page">
             <div className="comparison-container">
-                <div className="column small">
-                    <img src={tigerLily} alt="Tiger Lily"  style={{height: '400px', width: '145px'}}/>
+                <div className="comparison-column ">
+                    <img src={tigerLily} alt="Tiger Lily"  style={{height: '400px', width: '145px', marginLeft: "60px"}}/>
                 </div>
                 <div className="column large">
                    <Card />
                 </div>
 
-                <div className="column small">
+                <div className="comparison-column">
                     <Characters image={tinkerbell} /> 
                 </div>
             </div>

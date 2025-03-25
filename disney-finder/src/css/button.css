@@ -1,0 +1,21 @@
+/* Primary Buttons ./Button
+  --------------------------------------------- 
+  This is used to style the primary buttons on the home page.
+*/
+.custom-button {
+    width: 280px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: #19BACC;
+    color: #FFFFFF;
+    border: none;
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .custom-button:hover {
+    background-color: #D9D9D9;
+    color:#17a2b8;
+  }

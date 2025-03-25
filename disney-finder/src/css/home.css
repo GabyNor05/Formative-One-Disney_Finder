@@ -1,0 +1,39 @@
+/* Home ./Home
+  --------------------------------------------- 
+  This is used to style the Container abd buttons on the home page
+
+*/
+
+.home-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .homeParagraphText{
+    margin: 0 auto;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: var(--sds-typography-body-font-family);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+  }
+
+  .homeParagraphText p{
+    margin-top: 10px;
+  }
+
+  .button-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+  }
+
+  

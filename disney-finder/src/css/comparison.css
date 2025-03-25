@@ -1,12 +1,70 @@
+/* Comparison ./Comparison
+  --------------------------------------------- 
+  This is used to style the Cards that contain the doughnut chart and Plus button on the comparison page.
+
+*/
+
+.Comparison-page{
+    background-image: url("../assests/glitterBg.png");
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    color: white;  
+  } 
+
+.doughnut-chart{
+    width: 200px;
+    height: 200px;
+  }
+  
+  .comparison-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .comparisonChart {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .card {
+    width: 200px;
+    background-color: rgba(115, 115, 115, 0.10);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: white;
+  }
+  
+  .card-content h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .card-content .doughnut-chart {
+    margin: 20px 0;
+  }
+  
+  .card-content .rating {
+    font-size: 18px;
+    color: #D9D9D9;
+  }
+
 /* Style for the small columns */
-.column.small {
+.comparison-column {
     display: flex;
     justify-content: center; /* Center the image horizontally */
     align-items: flex-start; /* Align items at the top initially */
     padding-top: 60px; /* Add padding to move the image down */
-}
-
-/* Optional: Style for the images */
-.column.small img {
+  }
+  
+  /* Optional: Style for the images */
+  .comparison-column img {
     margin-top: 60px; /* Add margin to move the image further down */
-}
+  }
+

@@ -1,0 +1,21 @@
+.thumbnail {
+    position: relative; /* Required for the overlay */
+    height: 123px;
+    width: 190px;
+    border-radius: 10px;
+    overflow: hidden; /* Ensures the overlay stays within the thumbnail bounds */
+}
+
+.thumbnail:hover {
+    opacity: 0.5; /* Reduce the opacity of the thumbnail on hover */
+    cursor: pointer;
+}
+
+
+.thumbnail-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px;
+}
