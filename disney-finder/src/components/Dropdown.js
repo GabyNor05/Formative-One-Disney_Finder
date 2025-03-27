@@ -14,9 +14,9 @@ const Dropdown = ({ setSelectedTitle }) => {
                 url: "https://Disney-Plus-Top-Movies-and-TV-Shows-API-by-APIRobots.proxy-production.allthingsdev.co/v1/disney-plus-top",
                 headers: {
                     Accept: "application/json",
-                    "x-apihub-key": "Q72-oUAW3BiYSj8OyUI4ui-ElmcLepMHjMMuzJQdeVkHf05sxL",
-                    "x-apihub-host": "Disney-Plus-Top-Movies-and-TV-Shows-API-by-APIRobots.allthingsdev.co",
-                    "x-apihub-endpoint": "17c25255-b1d0-402a-8756-cbbe678457dd",
+                    'x-apihub-key': '6FAC-eaaR5WSfcTMu00bphCr3-OE2MYui5KKzzjxEcZmoytg9Q',
+                    'x-apihub-host': 'Disney-Plus-Top-Movies-and-TV-Shows-API-by-APIRobots.allthingsdev.co',
+                    'x-apihub-endpoint': 'ff720095-39c6-4792-9d5c-b947546e1f59'
                 },
             };
 
