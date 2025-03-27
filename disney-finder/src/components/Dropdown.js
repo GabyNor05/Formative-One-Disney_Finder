@@ -57,10 +57,10 @@ const Dropdown = ({ setSelectedTitle }) => {
                     borderRadius: "5px",
                     fontSize: "16px",
                     margin: "10px 0",
-                    color: selectedValue === "" ? "gray" : "black", // Change color based on selection
+                    color: selectedValue === "" ? "gray" : "white", // Change color based on selection
                 }}
             >
-                <option value="" disabled>
+                <option value="" disabled >
                     -- Choose a Title --
                 </option>
                 {Array.isArray(titles) && titles.length > 0 ? (

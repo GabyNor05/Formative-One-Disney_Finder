@@ -11,14 +11,14 @@ const DoughnutChart = ({ selectedTitle }) => {
     }
 
     const data = {
-        labels: ["Release Year", "IMDB Score", "TMDB Score"],
+        labels: ["TMBD Popularity", "IMDB Score", "TMDB Score"],
         datasets: [
             {
                 label: "Title Data",
                 data: [
                     selectedTitle.tmdb_popularity ? selectedTitle.tmdb_popularity : 0,
-                    selectedTitle.imdb_score ? selectedTitle.imdb_score * 3 : 0,
-                    selectedTitle.tmdb_score ? selectedTitle.tmdb_score * 3: 0,
+                    selectedTitle.imdb_score ? selectedTitle.imdb_score : 0,
+                    selectedTitle.tmdb_score ? selectedTitle.tmdb_score :0,
                 ],
                 backgroundColor: ["#19BACC", "#D9D9D9", "#012E57"],
                 borderColor: ["#19BACC", "#D9D9D9", "#012E57"],
