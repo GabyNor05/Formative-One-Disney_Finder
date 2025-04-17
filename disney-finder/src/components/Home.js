@@ -20,7 +20,7 @@ function Home() {
                             <h1>Disney+ Finder</h1>
                         </div>
                         <div className="homeParagraphText">
-                            <p>Disney Plus Finder instant access to a curated list making it easier to find the best possible TV Shows and Movies for you.</p>
+                            <p>Disney Plus Finder provides instant access to a curated list making it easier to find the best possible TV Shows and Movies for you.</p>
                         </div>
                         <Thumbnail />
                         <div className="button-row">

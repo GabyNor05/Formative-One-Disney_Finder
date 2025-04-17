@@ -8,8 +8,9 @@
     background-image: url("../assests/glitterBg.png");
     background-size: cover;
     background-position: center;
-    height: 700px;
+    height: 890px;
     color: white;  
+    padding-top: 5%;
   } 
 
 .doughnut-chart{

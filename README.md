@@ -49,6 +49,8 @@ Highlights of my page are the router navigation bar, doughnut chart created with
 ### Challenges
 A challenge I came across was figuring out [Disney Plus Top Movies and TV Shows API](https://www.allthingsdev.co/apimarketplace/endpoints/disney-plus-top-movies-and-tv-shows-api-by-apirobots/6763fb9e33e2ef7a2c21d7b4) because the endpoint provided by the creator is get random and the get list endpoint did not have discriptive element names for me to call from. So I just removed the get random in the fetch URL link however the issue that still persists is that there are only 10 items in the array.
 
+I was really challenged with the limited usage on the API I had to use 3 different emails, it means I called the API at least 202 times, this led to a delay in developement as i reached out to the creator but did not get an answer.
+
 I struggled with the visiblity of the text in the dropdown, as when a title was selected the font colour would change to black and against the background of the page it is not legible.
 
 Another thing I battled the alert box that pops up on the compare page and how to create it.
@@ -64,6 +66,3 @@ A minor challenge I experienced was what data to use that can be visibly distict
 * A Discover page
 * A Single View page
 
-
-### License
-[MIT](LICENSE) © [Jughead Studio](https://github.com/JugheadStudio)
