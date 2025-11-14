@@ -1,3 +1,5 @@
+![Banner](./documentation/disney+Header.png)
+
 # About Disney+ Finder
 
 Disney+ Finder is a react app built using [Disney Plus Top Movies and TV Shows API](https://www.allthingsdev.co/apimarketplace/endpoints/disney-plus-top-movies-and-tv-shows-api-by-apirobots/6763fb9e33e2ef7a2c21d7b4), which is an API that provides instant access to a curated list of metadata from a selection of popular titles from Disney+. Making it easier to find the best possible TV Shows and Movies.
