@@ -6,7 +6,7 @@
   background-image: url("assests/glitterBg.png");
   background-size: cover;
   background-position: center;
-  height: 750px;
+  height: 100vh;
   color: white;  
   padding-top: 8%;
 } 
@@ -17,7 +17,7 @@
   color: var(--Accent, #19BACC);
   text-align: Center;
   font-family: "New Walt Disney UI";
-  font-size: 80px;
+  font-size: 60px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;

@@ -108,9 +108,8 @@ const Dropdown = ({ setSelectedTitle }) => {
                 id="titles-dropdown"
                 onChange={handleTitleClick}
                 value={selectedValue}
-                className="w-full"
+                className="w-full px-4"
                 style={{
-                    padding: "10px",
                     borderRadius: "5px",
                     fontSize: "16px",
                     margin: "10px 0",

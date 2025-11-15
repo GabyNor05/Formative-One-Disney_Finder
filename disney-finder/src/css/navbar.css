@@ -9,7 +9,12 @@
     display: flex;
     align-items: center;
     opacity: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
+
 .nav-link {
     margin: 10px;
     color: white;

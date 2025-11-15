@@ -8,7 +8,7 @@
     background-image: url("../assests/glitterBg.png");
     background-size: cover;
     background-position: center;
-    height: 890px;
+    height: 100vh;
     color: white;  
     padding-top: 5%;
   } 

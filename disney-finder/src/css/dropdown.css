@@ -1,8 +1,8 @@
 #titles-dropdown {
+    height: 42px;
     background-color: rgba(115, 115, 115, 0.10);
     color: gray;
     border-radius: 10px;
-    padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-size: 30px;
     font-weight: 600;
