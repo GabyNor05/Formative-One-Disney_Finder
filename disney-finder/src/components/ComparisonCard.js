@@ -35,9 +35,9 @@ const Card = () => {
                             <div className="doughnut-chart">
                                 <DoughnutChart selectedTitle={selectedTitle} />
                             </div>
-                            <h2>{selectedTitle ? selectedTitle.title : "Title"}</h2>
+                            <h2>{selectedTitle ? selectedTitle.Title : "Title"}</h2>
                             <p className="rating">
-                                {selectedTitle ? `${selectedTitle.imdb_score || "N/A"} rating` : "rating"}
+                                {selectedTitle ? `IMDb: ${selectedTitle.imdbRating || "N/A"}` : "rating"}
                             </p>
                         </div>
                     </div>
@@ -49,10 +49,8 @@ const Card = () => {
                                     <div className="doughnut-chart">
                                         <DoughnutChart selectedTitle={secondSelectedTitle} />
                                     </div>
-                                    <h2>{secondSelectedTitle.title}</h2>
-                                    <p className="rating">
-                                        {secondSelectedTitle.imdb_score || "N/A"} rating
-                                    </p>
+                                    <h2>{secondSelectedTitle.Title}</h2>
+                                    <p className="rating">IMDb: {secondSelectedTitle.imdbRating || "N/A"}</p>
                                 </>
                             ) : (
                                 <>
