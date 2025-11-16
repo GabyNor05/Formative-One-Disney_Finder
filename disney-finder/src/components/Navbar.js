@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../assests/disney+.png";
+import logo from "../assests/Disney+ Finder.png";
 import "../css/navbar.css";
 
 function Navbar() {
@@ -10,7 +10,6 @@ function Navbar() {
       <div className = "nav-link" >
         <Link to="/" className="nav-link">Home</Link>
         <Link to="/comparison" className="nav-link">Comparison</Link>
-        <Link to="/timeline" className="nav-link">Timeline</Link>
       
       </div>
     </nav>

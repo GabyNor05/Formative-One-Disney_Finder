@@ -25,7 +25,6 @@ function Home() {
                         <Thumbnail />
                         <div className="button-row">
                                 <Button text="Compare Titles" link = "./Comparison" />
-                                <Button text="View Timeline" link = "./Timeline"/>
                         </div>
                     </div>
                 </div>
