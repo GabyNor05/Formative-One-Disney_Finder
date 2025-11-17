@@ -111,6 +111,14 @@ npm start
 
 #### For the Chart.js doughnut chart, carefully selected data fields were used to ensure visual clarity and meaningful comparison.
 
+---
+
+# Demo Video
+
+[Watch Demo Video](./documentation/Demo%20Video.mp4)
+
+---
+
 # 🚀 Future Implementations
 
 * 🔐 User Login System
