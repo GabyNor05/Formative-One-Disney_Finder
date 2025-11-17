@@ -1,70 +1,120 @@
 ![Banner](./documentation/disney+Header.png)
 
-# About Disney+ Finder
+# 📺 Disney+ Finder
 
-Disney+ Finder is a react app built using [Disney Plus Top Movies and TV Shows API](https://www.allthingsdev.co/apimarketplace/endpoints/disney-plus-top-movies-and-tv-shows-api-by-apirobots/6763fb9e33e2ef7a2c21d7b4), which is an API that provides instant access to a curated list of metadata from a selection of popular titles from Disney+. Making it easier to find the best possible TV Shows and Movies.
+Disney+ Finder is a React-based web application designed to help users quickly discover high-quality movies and TV shows available on Disney+. The app uses a curated dataset of Disney+ titles combined with metadata fetched from the [OMDb API](https://www.omdbapi.com/) (The Open Movie Database), a public API that provides reliable information such as IMDb ratings, release year, and genre.
 
-### Built With
+---
+
+## 💡 Overview
+
+The goal of Disney+ Finder is to help users choose what to watch based on quality and popularity, rather than scrolling endlessly through categories. By comparing IMDb ratings, Metascore ratings, and Rotten Tomatoes ratings, users can identify the top-performing titles available on Disney+.
+
+The app simplifies decision-making by visualising data and presenting clear comparisons.
+
+---
+
+# 🏗️ Tech Stack Overview
+
+| Technology | Purpose |
+|------------|---------|
+| React | Core framework used to build the interface, manage components, and handle dynamic updates. |
+| CSS + Bootstrap | Provides UI styling for layouts, dropdowns, spacing, and responsive design. |
+|JavaScript | Logic for API calls, state handling, and data processing. |
+| Axios | Asynchronous data retrieval. |
+| OMDb API | Provides IMDb ratings, genre, and release-year metadata for selected titles. |
+| Chart.js | Renders the interactive doughnut chart comparing IMDb, TMDb, and popularity values. |
+
+---
+
+# ⚙️ How to Run
+
+#### 1️⃣ Clone the repo
+```
+git clone https://github.com/GabyNor05/Formative-One-Disney_Finder.git
+```
+#### 2️⃣ Open disney-finder file in the terminal:
+
+```
+cd disney-finder
+```
+
+#### 3️⃣ Install dependencies using the terminal:
+
+```
+npm install
+```
+
+#### 4️⃣ Run the app:
+
+```
+npm start
+```
+
+---
+
+# 💡 Key Features
+
+| Home Page | Compare Page |
+| :--- | :--- |
+| API overview details overview | Compare Title Details |
+| Character Images | Compare Title IMBD Rating|
+| Thumbnails | Compare Title Metascore Rating |
+|  | Compare Title Rotten Tomato Rating |
+
+## 🛠️ Built With
 [![Javascript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)](https://www.javascript.com/)
 [![NodeJS](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/en)
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
 [![ChartJS](https://img.shields.io/badge/Chart.js-FF6384?style=for-the-badge&logo=chartdotjs&logoColor=white)](https://www.chartjs.org/)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
 
+---
 
-## How To Install
+# 🧩 Development Process
 
-To get started, clone the repo:
-```
-git clone https://github.com/GabyNor05/Formative-One-Disney_Finder.git
-```
+## ✨ Highlights
 
-Install all the dependencies using npm:
-```
-npm install
-```
+#### I implemented a clean router-based navigation bar for intuitive page transitions. Created an interactive doughnut chart using Chart.js, visualising title-specific data, clearly and engagingly. Integrated character images and dynamic title selection to enhance user engagement. I built a custom dropdown component that dynamically loads titles from the API and updates the comparison page.
 
-Run the app:
-```
-npm start
-```
+## ⚠️ Challenges
 
-## Features
+#### The initial Disney Plus Top Movies and TV Shows API was difficult to use due to its:
 
-| Home Page | Compare Page | Timeline Page |
-| :--- | :--- | :--- |
-| API overview details overview | Compare Title Details | N/A |
-| Character Images | Compare Title IMBD Score|  |
-| Thumbnails | Compare Title TMBD Score | |
-|  | Compare Title TMBD Popularity |  |
+* Get-random endpoint is the only functional one.
+* Get-list endpoint containing non-descriptive property names, making it hard to reliably access content. It only returned 10 items.
+* The API I originally used had a 200 call limit per month. I had to use different emails to regain access, which caused delays.
 
-## The Idea
+#### Dropdown text visibility:
 
-The idea was to create a website that you could use to determine which movie or TV show you would like to watch based on their popularity, TMBD and IMBD scores that is available on Disney+.
+* Selected items appeared in dark text on a dark background, reducing legibility.
+
+#### Alert box logic:
+
+* Building the custom alert on the Compare page required extra debugging.
+
+#### Chart data selection:
+
+* Choosing which metrics to visualise in the doughnut chart required experimentation to ensure distinct, readable values.
 
 
-## Development Process
+## 🧪 Solution
 
-### Highlights
-Highlights of my page are the router navigation bar, doughnut chart created with Chart.js, character images and my dropdown for chosing a title.
+#### To improve usability and reliability, the project transitioned to using the [OMDB API](https://www.omdbapi.com/), which provides consistent movie data and clearer property structures. This API resolved issues with:
+* Data availability
+* Naming conventions
+* Fetch reliability
 
-### Challenges
-A challenge I came across was figuring out [Disney Plus Top Movies and TV Shows API](https://www.allthingsdev.co/apimarketplace/endpoints/disney-plus-top-movies-and-tv-shows-api-by-apirobots/6763fb9e33e2ef7a2c21d7b4) because the endpoint provided by the creator is get random and the get list endpoint did not have discriptive element names for me to call from. So I just removed the get random in the fetch URL link however the issue that still persists is that there are only 10 items in the array.
+#### The dropdown visibility issue was fixed by adjusting the CSS state styling so that selected text remains legible against the background.
 
-I was really challenged with the limited usage on the API I had to use 3 different emails, it means I called the API at least 202 times, this led to a delay in developement as i reached out to the creator but did not get an answer.
+#### The alert box functionality on the comparison page was implemented using custom JavaScript, replacing the default browser alert for a more branded and user-friendly experience.
 
-I struggled with the visiblity of the text in the dropdown, as when a title was selected the font colour would change to black and against the background of the page it is not legible.
+#### For the Chart.js doughnut chart, carefully selected data fields were used to ensure visual clarity and meaningful comparison.
 
-Another thing I battled the alert box that pops up on the compare page and how to create it.
+# 🚀 Future Implementations
 
-A minor challenge I experienced was what data to use that can be visibly distictive in the doughnut chart.
-
-## Future Implementations
-
-* Login 
-* A larger database
-* Thumbnails that take you to the IMBD page
-* A Timeline page
-* A Discover page
-* A Single View page
+* 🔐 User Login System
+* 🕒 Timeline Page
+* 🔍 Discover Page
+* 📄 Single Title View Page
 
